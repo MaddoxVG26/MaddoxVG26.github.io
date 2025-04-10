@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang-" es" >
+  <head>
+  <title> Unidad 2 || Actividad 08 </title>
+  <link rel="icon" type=" image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name="Autor" content="Maddox Antonio Vela Gonzalez">
+  <meta name= "Fecha" content="21 Marzo del 2025"/>
+  <meta name="Descripcion" content="css">
+  <link rel ="stylesheet" type="text/css" href="act8.css">
+  <style>
+      #miEstilo{
+          border: 5px solid black;
+      }
+      #miEstilo th, #miEstilo td{ border:1px dotted gray}
+      .miEstilo{ border: 3px dashed dodgerblue;}
+      .miEstilo th, .miEstilo td{ border: 1px dotted skyblue}
+      .miEstilo tr:nth-child(odd){background-color: skyblue;}
+      .zoom:hover{font-size: 25px; background-color: green;}
+      .menuHorizontal a {text-decoration: none; color: crimson;}
+.menuVertical a {text-decoration: none; color: white;}
+.menuHorizontal a:hover { text-decoration: underline;}
+.menuVertical a:hover { text-decoration: underline;}
+
+/* <span class="menuHorizontal"><a href="#">Opcion No.1</a></span> */
+.menuHorizontal {
+    height: 75%; font-size: 75%;
+    transition: height 750ms, font-size 750ms;
+}
+
+.menuHorizontal:hover{
+    height: 125%; font-size: 125%;
+}
+
+/* <div class="menuVertical"><a href="#">Opcion No.1</a></div> */
+.menuVertical{
+    border: 1px solid black;
+    height: 20px; width: 100px;
+    background-color: deepskyblue;
+    transition: width 650ms, background-color 650ms;
+}
+.menuVertical:hover{
+    width: 200px;
+    background-color: deeppink;
+    transform: matrix3d(122);
+}
+  </style>
+</head>
+<body>
+<!--Llenar el titulo y pegar el contenido-->
+<h1>Unidad 2 | Actividad 08 </h1>
+<h1> Tema (Efectos) </h1>
+<h2> Tabla con Estilo por ID</h2>
+<table id="miEstilo">
+  <thead>
+<tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>
+<tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </thead>
+</table>
+<h2 class="miEstilo zoom">Tabla con estilo por CLASS</h2>
+<table class="miEstilo">
+  <thead>
+      <tr><th></th><th class="zoom">A</th><th class="zoom">B</th><th class="zoom">C</th><th class="zoom">D</th><th>E</th></tr>
+      <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>4</td><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+          </thead>
+</table>
+<h2>Menú Horizontal</h2>
+&int;
+<span class="menuHorizontal"><a href="#">Opcion No.1</a></span>&int;
+<span class="menuHorizontal"><a href="#">Opcion No.2</a></span>&int;
+<span class="menuHorizontal"><a href="#">Opcion No.3</a></span>&int;
+<span class="menuHorizontal"><a href="#">Opcion No.4</a></span>&int;
+<span class="menuHorizontal"><a href="#">Opcion No.5</a></span>&int;
+<h2>Menú Vertical</h2>
+<div class="menuVertical"><a href="#">Opcion No.1</a></div>
+<div class="menuVertical"><a href="#">Opcion No.2</a></div>
+<div class="menuVertical"><a href="#">Opcion No.3</a></div>
+<div class="menuVertical"><a href="#">Opcion No.4</a></div>
+<div class="menuVertical"><a href="#">Opcion No.5</a></div>
+<h2>Animacion</h2>
+<br><br><br>
+</body>
+</html>

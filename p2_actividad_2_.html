@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidad 2 | Actividad 02</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="author" content="Maddox Antonio Vela Gonzalez">
+    <meta name="fecha" content="27 de febrero de 2025">
+    <meta name="descripcion" content="Tablas">
+</head>
+<body>
+    <h1>Unidad 2 | Actividad 02: Tema (Tablas)</h1>
+ 
+    <h3>Tabla con celdas combinadas</h3>
+    <table border="1">
+        <tr align="center">
+            <th colspan="4">Tabla No. 1</th>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td rowspan="4">6</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr align="center">
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="3">9</td>
+        </tr>
+        <tr align="center">
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr align="center">
+            <td>10</td>
+            <td>11</td>
+        </tr>
+    </table>
+ 
+    <br>
+ 
+    <table border="5">
+        <tfoot>
+            <tr align="center">
+                <td colspan="4">
+                    <code><small>Ejemplo con thead, <br> tbody y tfoot</small></code>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr align="center">
+                <td rowspan="3">5</td>
+                <td>6</td>
+                <td colspan="2">7</td>
+            </tr>
+            <tr align="center">
+                <td>8</td>
+                <td rowspan="2">9</td>
+                <td>10</td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">11</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr align="center">
+                <th colspan="4">Tabla No. 2</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
