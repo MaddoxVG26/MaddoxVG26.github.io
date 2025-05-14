@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 3 | Actividad 01</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Maddox Antonio Vela Gonzalez">
+    <meta name="Fecha" content="28 de abril de 2024">
+    <meta name="Descripción" content="JavaScript">
+</head>
+<body>
+    <h1>Unidad 3 | Actividad 03 :: Javascript</h1>
+    <script>
+        let opc = window.prompt("Elige una de las opciones: \n1. Suma\n2. Resta\n3. Multiplicación\n4. División");
+        let var1 = Number(window.prompt("¿Cuál es el primer término?"));
+        let var2 = Number(window.prompt("¿Cuál es el segundo término?"));
+
+        switch(opc) {
+            case "1":
+                document.write("<h3>Operación: Suma</h3>");
+                document.write("<code>" + var1 + " + " + var2 + " = " + (var1 + var2) + "</code>");
+            break;
+            case "2":
+                document.write("<h3>Operación: Resta</h3>");
+                document.write("<code>" + var1 + " - " + var2 + " = " + (var1 - var2) + "</code>");
+            break;
+            case "3":
+                document.write("<h3>Operación: Multiplicación</h3>");
+                document.write("<code>" + var1 + " × " + var2 + " = " + (var1 * var2) + "</code>");
+            break;
+            case "4":
+                document.write("<h3>Operación: División</h3>");
+                document.write("<code>" + var1 + " ÷ " + var2 + " = " + (var1 / var2) + "</code>");
+            break;
+    
+        }
+    </script>
+</body>
+</html>

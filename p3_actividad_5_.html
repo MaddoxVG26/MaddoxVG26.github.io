@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Unidad 3 | Actividad 5</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Maddox Antonio Vela Gonzalez">
+    <meta name="Fecha" content="08 de mayo de 2025">
+    <meta name="Descripcion" content="JavaScript">
+</head>
+<body>
+  <h1>Unidad 3 | Actividad 05 :: Tema Formularios</h1>
+  <form class="form-horizontal">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Form Name</legend>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Nombre">Nombre</label>  
+      <div class="col-md-5">
+      <input id="Nombre" name="Nombre" type="text" placeholder="Inserte aqui su nombre" class="form-control input-md">
+      <span class="help-block">Ingrese al menos 8 caracteres</span>  
+      </div>
+    </div>
+    
+    <!-- Prepended text-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="prependedtext">Numero telefonico</label>
+      <div class="col-md-5">
+        <div class="input-group">
+          <span class="input-group-addon">+52</span>
+          <input id="prependedtext" name="prependedtext" class="form-control" placeholder="complemente su numero telefonicp" type="text">
+        </div>
+        <p class="help-block">Mexicano</p>
+      </div>
+    </div>
+    
+    <!-- Appended Input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="correo">Correo electronico</label>
+      <div class="col-md-5">
+        <div class="input-group">
+          <input id="correo" name="correo" class="form-control" placeholder="Inserte aqui su correo electronico" type="text" required="">
+          <span class="input-group-addon">UPSLP</span>
+        </div>
+        <p class="help-block">Registrarse</p>
+      </div>
+    </div>
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Password">Password </label>
+      <div class="col-md-5">
+        <input id="Password" name="Password" type="password" placeholder="Inserte aqui su contraseña" class="form-control input-md" required="">
+        <span class="help-block">Olvidé mi contraseña</span>
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Click al finalizar">Click al finalizar</label>
+      <div class="col-md-4">
+        <button id="Click al finalizar" name="Click al finalizar" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+
+</body>
