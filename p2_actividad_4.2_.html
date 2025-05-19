@@ -1,67 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkin Park - Miembros</title>
+  <title> Unidad 2 || Actividad 4.2 </title>
+  <link rel="icon" type=" image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta name= "Autor" content="Vela Gonzalez Maddox"/>
+  <meta name= "Fecha" content="14 Marzo del 2025"/>
+  <meta name= "Descripción" content="Lista, Tabla e Imagenes"/>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-style: italic; 
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: #f9f5f0;
+            color: #3e2723;
         }
+        
         h1 {
-            font-family: 'Comic Sans MS', cursive;
+            color: #5D4037;
+            text-align: left;
+            border-bottom: 2px solid #8D6E63;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
-        h2 {
-            font-family: 'Comic Sans MS', cursive;
+        
+        .acordeon {
+            margin: 30px 0;
         }
-        .member {
-            margin-left: 20px;
-        }
-        .info {
-            background: #ddd;
-            padding: 10px;
+        
+        .viñeta {
+            margin-bottom: 15px;
             border-radius: 5px;
-            margin-top: 10px;
+            overflow: hidden;
         }
-        .no-image {
+        
+        .viñeta-titulo {
+            padding: 15px 20px;
+            background-color: #8D6E63;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            text-align: left;
+            border-left: 5px solid #5D4037;
+        }
+        
+        .viñeta-titulo::after {
+            content: '+';
+            float: right;
+            font-size: 20px;
+        }
+        
+        .viñeta.active .viñeta-titulo::after {
+            content: '-';
+        }
+        
+        .viñeta-contenido {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            font-style: italic;
+        }
+        
+        .viñeta.active .viñeta-contenido {
+            padding: 15px;
+            max-height: 1500px;
+        }
+        
+        .table-container {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 150px;
-            height: 150px;
-            background: #ccc;
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            margin-top: 10px;
+            gap: 20px;
+            align-items: flex-start;
+            margin: 10px 0;
+        }
+        
+        table {
+            flex: 2;
+            border-collapse: collapse;
+            width: 100%;
+            font-style: italic;
+        }
+        
+        th, td {
+            border: 1px solid #A1887F;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #D7CCC8;
+            font-weight: bold;
+            width: 30%;
+        }
+        
+        tr:nth-child(odd) td {
+            background-color: #fffaf7;
+        }
+        
+        tr:nth-child(even) td {
+            background-color: #efebe9;
+        }
+        
+        .coffee-image {
+            flex: 1;
+            max-width: 250px;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid #A1887F;
+            align-self: stretch;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #5D4037;
         }
     </style>
 </head>
 <body>
-    <h1>Unidad 21 Actividad 04-2 :: Tema (Tipografía)</h1>
-    <h2>Linkin Park ~ Band members</h2>
+  <h1>Unidad 02 :: Actividad 4.2</h1>
+  <h1>Tema (Tipografia)</h1>
+  <br>
+  <h1>Guía Interactiva del Café</h1>
     
-    <div class="member">
-        <h3>Chester Bennington</h3>
-        <div class="info">
-            <p><strong>Nombre:</strong> Chester Charles Bennington</p>
-            <p><strong>Nacimiento:</strong> 20 de marzo de 1976, Phoenix, Arizona, EE. UU.</p>
-            <p><strong>Fallecimiento:</strong> 20 de julio de 2017 (41 años), Palos Verdes Estates, California, EE. UU.</p>
-            <p><strong>Géneros:</strong> Alternative metal, nu metal, hard rock, alternative rock, electronic rock, pop rock</p>
-            <p><strong>Ocupación:</strong> Cantante, compositor, actor</p>
-            <p><strong>Instrumentos:</strong> Voz</p>
-            <p><strong>Años activo:</strong> 1992 - 2017</p>
-            <div class="no-image">No image available</div>
+    <div class="acordeon">
+        <div class="viñeta">
+            <div class="viñeta-titulo">
+                <span>Fundamentos del Café</span>
+            </div>
+            <div class="viñeta-contenido">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Origen</strong></td>
+                            <td>Etiopía, siglo IX. Descubierto según la leyenda por el pastor Kaldi.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Variedades principales</strong></td>
+                            <td>Arábica (60-70% producción) y Robusta (30-40%). También existen Liberica y Excelsa.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Países productores</strong></td>
+                            <td>Brasil (1°), Vietnam (2°), Colombia (3°), Indonesia, Etiopía, Honduras.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consumo mundial</strong></td>
+                            <td>Se consumen aproximadamente 2.25 billones de tazas de café al día.</td>
+                        </tr>
+                    </table>
+                    <img src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Granos de café" class="coffee-image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="viñeta">
+            <div class="viñeta-titulo">
+                <span>Proceso de Producción</span>
+            </div>
+            <div class="viñeta-contenido">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Cultivo</strong></td>
+                            <td>Los cafetos necesitan clima tropical, altitudes entre 600-2000m y 3-4 años para producir frutos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cosecha</strong></td>
+                            <td>Manual (selectiva) o mecanizada. La cereza madura cambia de verde a rojo intenso.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Procesamiento</strong></td>
+                            <td>Métodos: Lavado (fermentación), Natural (secado al sol) o Honey (intermedio).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tueste</strong></td>
+                            <td>Fases: Secado (160°C), Desarrollo (180-210°C), Enfriamiento. Determina el perfil de sabor.</td>
+                        </tr>
+                    </table>
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Proceso del café" class="coffee-image">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="viñeta">
+            <div class="viñeta-titulo">
+                <span>Métodos de Preparación</span>
+            </div>
+            <div class="viñeta-contenido">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Espresso</strong></td>
+                            <td>25-30 segundos, 9 bares de presión. 30ml de bebida concentrada con crema.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prensa Francesa</strong></td>
+                            <td>4 minutos, inmersión completa. Cuerpo completo y sabores intensos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>V60/Chemex</strong></td>
+                            <td>Extracción por goteo, 3-4 minutos. Sabores limpios y aromáticos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aeropress</strong></td>
+                            <td>1-2 minutos, presión manual. Versátil para diferentes perfiles.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cafetera Italiana</strong></td>
+                            <td>5 minutos, presión por vapor. Sabor intermedio entre espresso y filtrado.</td>
+                        </tr>
+                    </table>
+                    <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Métodos de preparación" class="coffee-image">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="viñeta">
+            <div class="viñeta-titulo">
+                <span>Beneficios para la Salud</span>
+            </div>
+            <div class="viñeta-contenido">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Energía y cognición</strong></td>
+                            <td>Mejora el estado de alerta, tiempo de reacción y memoria a corto plazo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Antioxidantes</strong></td>
+                            <td>Contiene polifenoles que combaten radicales libres. Mayor fuente en dieta occidental.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rendimiento físico</strong></td>
+                            <td>Aumenta adrenalina y moviliza ácidos grasos, mejorando rendimiento en 11-12%.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Prevención de enfermedades</strong></td>
+                            <td>Reduce riesgo de diabetes tipo 2 (23-50%), Alzheimer, Parkinson y algunos cánceres.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salud hepática</strong></td>
+                            <td>Protege contra cirrosis (hasta 80% menos riesgo con 4 tazas/día).</td>
+                        </tr>
+                    </table>
+                    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Beneficios del café" class="coffee-image">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="viñeta">
+            <div class="viñeta-titulo">
+                <span>Cultura y Curiosidades</span>
+            </div>
+            <div class="viñeta-contenido">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td><strong>Historia</strong></td>
+                            <td>Primeras cafeterías en La Meca (s.XV). Prohibido en Europa por "bebida del diablo" hasta aprobación papal en 1600.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Récords</strong></td>
+                            <td>Café más caro: Kopi Luwak ($700/kg). Taza más grande: 22,000 litros (Corea, 2014).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rituales</strong></td>
+                            <td>Ceremonia etíope (3 rondas), Fika sueco (pausa social), Café turco (fortuna en posos).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Datos curiosos</strong></td>
+                            <td>Beethoven contaba 60 granos por taza. Balzac bebía 50 tazas diarias. Brasil tuvo una "crisis del café" en 1929.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Economía</strong></td>
+                            <td>Segundo producto más comercializado después del petróleo. Emplea a 125 millones de personas.</td>
+                        </tr>
+                    </table>
+                    <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cultura del café" class="coffee-image">
+                </div>
+            </div>
         </div>
     </div>
-    
-    <ul>
-        <li>Rob Bourdon</li>
-        <li>Mike Shinoda</li>
-        <li>Brad Delson</li>
-        <li>Joe Hahn</li>
-        <li>Dave Farrell</li>
-    </ul>
+
+    <script>
+        document.querySelectorAll('.viñeta-titulo').forEach(titulo => {
+            titulo.addEventListener('click', () => {
+                const viñeta = titulo.parentElement;
+                const isActive = viñeta.classList.contains('active');
+                
+
+                document.querySelectorAll('.viñeta').forEach(v => {
+                    v.classList.remove('active');
+                });
+                                
+                    if (!isActive) {
+                    viñeta.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
